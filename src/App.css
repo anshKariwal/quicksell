@@ -1,0 +1,7 @@
+.tickets-section{
+  display: flex;
+  padding: 1.5rem 2rem;
+  overflow-x: scroll;
+  min-height: calc(100vh - 87.2px);
+  width: 100%;
+}
