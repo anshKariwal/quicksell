@@ -1,4 +1,4 @@
-.feature-card {
+.task-card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -26,26 +26,26 @@
   -webkit-box-orient: vertical; 
 }
 
-.feature-card-header {
+.task-card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.feature-tags-and-icon{
+.task-tags-and-icon{
     display: flex;
     align-items: center;
     gap: 5px;
 }
   
-.feature-card-id {
+.task-card-id {
     font-weight: 500;
     font-size: 0.9rem;
     color: #6b6f76
 }
   
-.feature-card-title {
+.task-card-title {
     font-size: 0.9rem;
     font-weight: 600;
     color: #333;
@@ -53,11 +53,11 @@
     width: 80%; 
 }
   
-.feature-request-btn {
+.task-request-btn {
     border: none
 }
 
-.feature-request-btn-container{
+.task-request-btn-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,17 +69,14 @@
     box-shadow: 0 0 2px #bec2c8;
 }
 
-.feature-request-btn-container span:last-child{
+.task-request-btn-container span:last-child{
     margin-left: 5px;
 }
 
-.feature-card-tags{
+.task-card-tags{
     display: flex;
     gap: 5px;
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
 }
-  
-  /* Additional styles for button states (hover, active, etc.) can be added as needed */
-  

@@ -14,7 +14,7 @@
     text-transform: capitalize;
 }
 
-.left{
+.left-container{
     display: flex;
     align-items: center;
     gap: 14px;
@@ -22,11 +22,11 @@
     justify-content: center;
 }
 
-.number{
+.nums{
     color: #6e7279;
 }
 
-.right{
+.right-container{
     display: flex;
     align-items: center;
     gap: 14px;
@@ -34,7 +34,7 @@
     justify-content: center;
 }
 
-.icon-header{
+.icon-container{
     position: relative;
     z-index: -1;
 }

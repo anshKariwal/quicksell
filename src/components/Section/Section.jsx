@@ -9,18 +9,18 @@ export default function Section({name, tickets, users, order, group}) {
   useEffect(() => {
     function checkOrder(){
       if(order === 'priority'){
-        tickets.sort((a, b) => {
-            return b.priority-a.priority;
+        tickets.sort((x, y) => {
+            return y.priority-x.priority;
           });
         }else if(order === 'title'){
-          tickets.sort((a, b) => {
-            let fa = a.title.toLowerCase(),
-                fb = b.title.toLowerCase();
+          tickets.sort((x, y) => {
+            let child1 = x.title.toLowerCase(),
+                child2 = y.title.toLowerCase();
     
-            if (fa < fb) {
+            if (child1 < child2) {
                 return -1;
             }
-            if (fa > fb) {
+            else if (child1 > child2) {
                 return 1;
               }
               return 0;
@@ -31,7 +31,7 @@ export default function Section({name, tickets, users, order, group}) {
         checkOrder();
       }, [tickets, sortedTickets, order])
       return (
-    <div className="container-section">
+    <div className="section-container">
       <Headings title={name} number={tickets.length} order={order} group={group} user={users}/>
       {sortedTickets.map((ticket, index) => (
           <Cards key={index} id={ticket.id} title={ticket.title} tags={ticket.tag} user={users.find(({id}) => id === ticket.userId)} ticket={ticket}/>

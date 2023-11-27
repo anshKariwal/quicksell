@@ -1,8 +1,8 @@
-.user-profile{
+.profile{
     position: relative;
 }
 
-.online-bubble{
+.online{
     height: 12px;
     width: 12px;
     border: 2px solid #fff;
@@ -13,6 +13,6 @@
     right: -2px;
 }
 
-.online-bubble-true{
+.online-true{
     background-color: green;
 }

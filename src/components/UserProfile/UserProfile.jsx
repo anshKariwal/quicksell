@@ -6,8 +6,8 @@ function UserProfile(props) {
   const { username, available } = props;
   const colors = utility.colors;
   return (
-    <div className="user-profile">
-      <div className={`online-bubble online-bubble-${available}`}></div>
+    <div className="profile">
+      <div className={`online online-${available}`}></div>
       <NameInitialsAvatar
         name={username}
         size="30px"
